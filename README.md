@@ -1,9 +1,7 @@
 # PostOffice- ChatBOT
-# Post Office Chatbot
 
 An interactive chatbot designed to assist users with **Post Office services**.  
 Built using **HTML, CSS, JavaScript, JSON, and Flask**, this chatbot provides a simple web-based interface to handle queries like tracking, services info, FAQs, and more.  
-
 ---
 
 ## 🚀 Features
@@ -12,14 +10,12 @@ Built using **HTML, CSS, JavaScript, JSON, and Flask**, this chatbot provides a 
 - ❓ Answers FAQs through a chatbot interface  
 - 🌐 Web-based interface using HTML, CSS, and JavaScript  
 - 🔗 Backend powered by Flask with JSON-based responses  
-
 ---
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Flask (Python)  
 - **Data Storage:** JSON (for intents & responses)  
-
 ---
 
 ## 📂 Project Structure
