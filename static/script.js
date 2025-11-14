@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
     div.classList.add(`${sender}-message`);
     div.innerHTML = `<p>${message}</p>`;
     chatbotMessages.appendChild(div);
-    chatbotMessages.scrollTo({ top: 50, behavior: 'smooth' });
+    chatbotMessages.scrollTo({ top: 80, behavior: 'smooth' });
     // REMOVED SCROLL: chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
   }
 
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
       wrap.appendChild(b);
     });
     chatbotMessages.appendChild(wrap);
-    chatbotMessages.scrollTo({ top: 50, behavior: 'smooth' });
+    chatbotMessages.scrollTo({ top: 80, behavior: 'smooth' });
     // REMOVED SCROLL: chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
   }
 
