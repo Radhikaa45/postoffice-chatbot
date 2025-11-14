@@ -134,10 +134,26 @@
                     
                 </div>
             </div>
-            <div class="chatbot-input">
-                <input type="text" id="userInput" placeholder="Type your message here...">
-                <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
-            </div>
+    <div class="chatbot-input">
+    
+    <div id="imageUploadContainer"> 
+        
+        <input type="file" 
+               id="imageUpload" 
+               accept="image/*" 
+               style="display: none;" 
+               disabled>
+
+        <label for="imageUpload" 
+               class="upload-btn disabled-upload" 
+               id="uploadButtonLabel" 
+               title="Select a Complaint type first">
+            <i class="fas fa-camera"></i>
+        </label>
+    </div>
+    <input type="text" id="userInput" placeholder="Type your message here...">
+    <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+</div>
         </div>
     </div>
     <div id="quitModal" class="modal">

@@ -1,0 +1,648 @@
+    [
+        {
+            "keywords": ["hi", "hello", "hey", "greetings", "hiii", "hi there", "good morning", "good afternoon", "good evening", "namaste", "namaskar", "hola", "welcome", "howdy","hllw"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Hello! Welcome to India Post Assistant. I can help you with postal services, banking schemes, insurance, and more. How may I assist you today?",
+                    "Namaskar! Welcome to India Post Assistant. I can help with tracking, banking, insurance, and postal services. What do you need today?",
+                    "Hello! You've reached India Post's virtual assistant. Would you like help with Speed Post, savings schemes, or something else?",
+                    "Good day! I can assist with parcel tracking, post office locations, and financial services. How may I help?"
+                ]
+            },
+            "options": [
+                { "text": "Track & Trace", "value": "track_trace" },
+                { "text": "Find Post Office", "value": "find_nearest_post_office" },
+                { "text": "Banking Services", "value": "banking_schemes" },
+                { "text": "Insurance Schemes", "value": "insurance" },
+                { "text": "Complaints", "value": "complaint" },
+                { "text": "Postal Services", "value": "postal_services" }
+            ]
+        },
+        {
+            "keywords": ["bye", "goodbye", "see you", "farewell", "exit", "quit", "close", "end", "that's all", "done"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Thank you for using India Post services! Have a great day. Remember, you can always come back for any postal or banking assistance you need.",
+                    "Thank you for using India Post services! Visit us again for any postal or banking needs. Have a great day!",
+                    "We appreciate you choosing India Post. For future reference, our website is always available: https://www.indiapost.gov.in",
+                    "Goodbye! Remember, you can track shipments anytime at https://www.indiapost.gov.in/_layouts/15/DOP.Portal.Tracking/TrackConsignment.aspx"
+                ]
+            }
+        },
+        {
+            "keywords": ["thanks", "thank you", "appreciate it", "i appreciate your help", "thankyou", "thnx", "thanks a lot", "grateful", "obliged"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "You're most welcome! It's my pleasure to assist you with India Post services. Is there anything else you'd like to know about our postal or banking services?",
+                    "You're welcome! For quick access later, bookmark our services page: https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx",
+                    "Happy to help! Did you know you can now pay post office bills online? Visit https://www.ippbonline.com/ for details.",
+                    "Glad to assist! You might also find our FAQ section helpful: https://www.indiapost.gov.in/vas/Pages/FAQ.aspx"
+                ]
+            },
+            "options": [
+                { "text": "Yes, more help", "value": "hi" },
+                { "text": "No, I'm done", "value": "bye" },
+                { "text": "Give Feedback", "value": "feedback" }
+            ]
+        },
+    {
+            "keywords": ["track_trace", "tracking", "package", "where is my parcel", "track my order", "speed post", "registered post", "track", "parcel status", "consignment status", "article tracking", "item tracking"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "You can track your India Post shipment using these methods:<br>1. <b>Website:</b> <a href='https://www.indiapost.gov.in/_layouts/15/DOP.Portal.Tracking/TrackConsignment.aspx' target='_blank'style='color:#D32F2F; text-decoration:underline;'>India Post Tracking Portal</a><br>2. <b>SMS:</b> Send SMS to 166 or 51969 in format: <i>POST track</i><br>3. <b>Mobile App:</b> India Post 'Track and Trace' app<br><br>Tracking is available for:<br>Speed Post, Registered Post, Express Parcel, Business Parcel & International Mail."]
+            },
+            "options": [
+                { "text": "Track Another Item", "value": "track_trace" },
+                { "text": "Delivery Complaint", "value": "delivery_complaint" },
+                { "text": "Shipping Rates", "value": "SRR" }
+            ]
+        },
+        {
+        "keywords": ["timing", "working hours", "open time", "close time", "post office timing", "when does post office open", "when does post office close", "post office hours", "opening hours", "lunch time", "office time"],
+        "answer": {
+            "randomize": true,
+            "options": [
+                "General Timings:\n Mon-Sat: 9 AM 5 PM\nLunch: 1:30 PM  2 PM\n Sunday: Closed\nSome head offices may stay open longer for bill payments or parcel bookings.",
+                "India Post hours:\n- **Mon-Sat:** 9:00 AM 5:00 PM\n- **Lunch:** Around 1:30 PM  2:00 PM\n- **Sunday:** Closed\nTimings may vary slightly across branches.",
+                "Most post offices work from **9:00 AM to 5:00 PM**, Mon-Sat.\n\nNote:\n- **Sunday/Public Holidays:** Closed\n- **Lunch:** 1:30 PM 2:00 PM (approx.)",
+                "Typical hours: **9 AM 5 PM**, Mon-Sat.\nClosed on **Sundays** & **Holidays**.\nSome metro Speed Post centers stay open till **8 PM**."
+            ]
+        }
+    },
+        
+        {
+            "keywords": ["find_nearest_post_office", "nearest post office", "post office nearby", "locate post office", "find post office", "where is post office", "post office location", "post office finder"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "You can find post offices through these options:",
+                    "Find nearest post offices:<br>",
+                    "Please choose from the below options or <br><b>SMS</b>: POSTOFFICE &lt;PINCODE&gt; to 51969" 
+                
+                ]
+            },
+            "options": [
+                { "text": "By Location (GPS)", "value": "find_office_by_location" },
+                { "text": "By PIN Code", "value": "find_by_pincode" },
+                { "text": "Online Directory", "value": "post_office_directory" }
+            
+            ]
+        },
+       {
+    "keywords": ["banking_schemes", "post office banking", "savings schemes", "investment options", "post bank", "financial services", "small savings"],
+    "answer": {
+        "randomize": true,
+        "options": [
+            "India Post offers these popular banking services:",
+            "Popular Savings Schemes (2024):\n1. Sukanya Samriddhi: 8.2%\n2. Senior Citizen Scheme: 8.2%\n3. PPF: 7.1%\nCompare all: <a href='https://www.indiapost.gov.in/vas/DOP/Pdf/Small_Savings_01042024.pdf' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/vas/DOP/Pdf/Small_Savings_01042024.pdf</a>",
+            "Digital Banking Options:\n• Internet Banking: <a href='https://www.indiapost.gov.in/vas/Pages/InternetBanking.aspx' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/vas/Pages/InternetBanking.aspx</a>\n• IPPB App: <a href='https://www.ippbonline.com' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.ippbonline.com</a>\n• SMS Banking: Register at your post office\nAll schemes qualify for Section 80C tax benefits",
+            "Investment Guide:\n• Minimum Investments:\n  - SB Account: ₹500\n  - RD: ₹100/month\n  - FD: ₹1,000\n• Tax Benefits:\n  - Up to ₹1.5 lakh under 80C\n  - ₹50,000 under 80CCD(1B) for NPS"
+        ]
+    },
+   "options": [
+    { "text": "Savings Account (SB)", "value": "sb" },
+    { "text": "Recurring Deposit (RD)", "value": "rd" },
+    { "text": "Time Deposit (TD)", "value": "td" },
+    { "text": "Monthly Income Scheme (MIS)", "value": "mis" },
+    { "text": "Senior Citizens Scheme (SCSS)", "value": "scss" },
+    { "text": "Public Provident Fund (PPF)", "value": "ppf" },
+    { "text": "Sukanya Samriddhi Account (SSA)", "value": "ssa" },
+    { "text": "Mahila Samman Savings Certificate (MSSC)", "value": "msss" },
+    { "text": "Kisan Vikas Patra (KVP)", "value": "kvp" }
+]
+       },
+ 
+{
+"keywords": ["sb", "savings account", "post office savings", "savings bank", "posb", "post office sb"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Post Office Savings Account (SB)\n\nA Savings Account allows deposit and withdrawal of money during post office working hours and also 24x7 through ATM.\n\nFeatures:\n\n• Rate of Interest: 4% per annum (w.e.f. 01.01.2024)\n\n• Minimum opening deposit: ₹500\n\n• Minimum subsequent deposit: ₹10\n\n• Only one SB account can be opened by an individual\n\n• Interest is calculated on the minimum balance between the 10th and the last day of the month\n\n• Interest is credited at the end of the financial year\n\nAdditional Facilities:\n\n• Cheque Book facility\n\n• ATM / Debit Card\n\n• Internet & Mobile Banking\n\n• Aadhaar Seeding\n\n• Atal Pension Yojana (APY)\n\n• Pradhan Mantri Suraksha Bima Yojana (PMSBY)\n\n• Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+},
+{
+"keywords": ["rd", "recurring deposit", "monthly savings", "installment scheme"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Recurring Deposit (RD)\n\nA Recurring Deposit account is one where a fixed amount is deposited every month for a term of 5 years.\n\nFeatures:\n• Rate of Interest: 6.7% per annum (compounded quarterly) — w.e.f. 01.01.2024\n• Minimum monthly deposit: ₹100 (in multiples of ₹10)\n• Tenure: 5 years\n• Subsequent deposit due date:\n  - If the account is opened up to the 15th, deposit by the 15th of every month\n  - If the account is opened from the 16th to the last working day, deposit by the last working day of every month\n\nDeposit / Default Rules:\n• If a monthly deposit is missed, a default charge of ₹1 per ₹100 denomination (pro-rata for other amounts) is applied for each defaulted month\n• After 4 regular defaults, the account becomes discontinued; it can be revived within 2 months from the 4th default\n• If not revived within this period, no further deposits can be made and the account remains discontinued\n• If there are not more than 4 defaults, the depositor may extend the maturity by the number of defaulted months and pay the missed installments during the extended period\n\nLoan / Closure / Extension:\n• After 12 installments and 1 year of continued (not discontinued) status, a loan up to 50% of the balance can be availed\n• Premature closure is allowed after 3 years from the date of opening (as per rules)\n• Account can be extended for a further 5 years on application; the interest rate during extension will be the original opening rate\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+}
+
+,
+{
+"keywords": ["td", "time deposit", "fixed deposit", "fd", "term deposit"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Time Deposit (TD) / Fixed Deposit (FD)\n\nA Time Deposit account is one where a fixed amount is deposited for a period of 1, 2, 3, or 5 years.\n\nRate of Interest (w.e.f. 01.01.2024):\n• 1 Year TD: 6.9%\n• 2 Year TD: 7.0%\n• 3 Year TD: 7.1%\n• 5 Year TD: 7.5% (Eligible for tax deduction under Section 80C)\n\nFeatures:\n• Any number of TD accounts can be opened\n• Minimum deposit: ₹1,000 (in multiples of ₹100)\n• No maximum deposit limit\n• Interest is paid annually / compounded quarterly (as per scheme rules)\n\nMaturity & Extension:\n• On maturity, the account may be extended for the same period for which it was originally opened\n\nWithdrawal & Security:\n• No withdrawal is allowed before 6 months from the date of deposit\n• TD account may be pledged/transferred as security to banks or other institutions by submitting the prescribed form along with acceptance letter\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+} ,
+
+{
+"keywords": ["mis", "monthly income scheme", "monthly interest", "post office mis", "income scheme"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Monthly Income Scheme (MIS)\n\nA MIS account is a fixed deposit account where interest is paid every month.\n\nFeatures (w.e.f. 01.01.2024):\n• Rate of Interest: 7.4% per annum\n• Maximum investment limit:\n  - ₹9,00,000 in a single account\n  - ₹15,00,000 in a joint account\n• Interest is payable monthly, starting one month from the date of opening\n• Tenure: 5 years\n\nClosure:\n• Account can be closed after 5 years at the concerned Post Office by submitting the prescribed application form along with the passbook\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+}
+,
+
+{
+"keywords": ["scss", "senior citizen saving scheme", "senior citizen savings", "senior savings", "senior scheme", "post office scss"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Senior Citizen Savings Scheme (SCSS)\n\nA scheme for individuals aged 60+. Certain retirees under 60 are also eligible within 1 month of receiving retirement benefits (see eligibility below).\n\nFeatures (w.e.f. 01.01.2024):\n• Rate of Interest: 8.2% per annum (paid quarterly)\n• Minimum deposit: ₹1,000; in multiples of ₹1,000\n• Maximum cumulative limit across all SCSS accounts per individual: ₹30,00,000\n• Investment qualifies under Section 80C of the Income Tax Act, 1961 (subject to overall limit)\n• Interest payout quarters: 31 March, 30 June, 30 September, 31 December\n• Interest is taxable; if total SCSS interest in a financial year exceeds ₹50,000, TDS is deducted at the prescribed rate\n• No TDS if valid Form 15G/15H is submitted and the accrued interest is within the prescribed limit\n\nEligibility (retirees below 60):\n• Retired civilian employees aged 55–<60: invest within 1 month of receipt of retirement benefits\n• Retired defence employees aged 50–<60: invest within 1 month of receipt of retirement benefits\n\nTenure, Extension & Closure:\n• Tenure: 5 years\n• Extension: Once for a further 3 years by applying at the post office with passbook\n• Closure: Allowed after 5 years by submitting the prescribed application form with passbook at the concerned Post Office\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+}
+,
+
+{
+"keywords": ["ppf", "public provident fund", "ppf account", "provident fund"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Public Provident Fund (PPF)\n\nA PPF account can be opened by any resident individual to save for a fixed term of 15 years.\n\nFeatures:\n• Rate of Interest: 7.1% per annum (w.e.f. 01.01.2024)\n• Minimum deposit: ₹500 per financial year\n• Maximum deposit: ₹1,50,000 per financial year\n• Deposits qualify for deduction under Section 80C of the Income Tax Act, 1961\n• If ₹500 is not deposited in a financial year, the account becomes discontinued (can be revived as per rules)\n• Loan can be taken after one year from the end of the FY in which the initial deposit was made\n\nClosure:\n• Account matures after 15 financial years (excluding the FY of opening)\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+},
+
+{
+"keywords": ["ssa", "sukanya", "sukanya samriddhi", "sukanya samruddhi", "girl child scheme"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Sukanya Samriddhi Account (SSA)\n\nAn account that can be opened by a guardian in the name of a girl child below 10 years of age.\n\nFeatures (w.e.f. 01.01.2024):\n• Rate of Interest: 8.2% per annum\n• Only one SSA can be opened in India (Post Office or any bank) in the name of a girl child\n• Maximum two SSA accounts per family; in case of twin/triplet girl births, more than two accounts are allowed as per rules\n• Minimum deposit per financial year: ₹250\n• Maximum deposit per financial year: ₹1,50,000 (in multiples of ₹50), in lumpsum or multiple instalments\n• Deposits qualify for deduction under Section 80C of the Income Tax Act\n• Deposit period: Up to completion of 15 years from the date of account opening\n• The account is operated by the guardian until the girl attains majority\n\nClosure / Maturity:\n• Account matures after 21 years from the date of opening\n• Premature closure allowed at the time of marriage of the girl child after she attains 18 years (as per rules)\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+},
+
+{
+"keywords": ["mahila samman", "msss", "mahila deposit", "women savings scheme"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Mahila Samman Saving Scheme\n\nA special savings scheme designed exclusively for women.\n\nFeatures (w.e.f. 01.01.2024):\n• Rate of Interest: 7.5% per annum (compounded quarterly)\n• Minimum deposit: ₹1,000 (in multiples of ₹100)\n• Maximum deposit limit: ₹2,00,000 across all accounts held by the individual\n• A gap of **3 months** must be maintained between opening a second account, if applicable\n• Up to **40% of the eligible balance** can be withdrawn after 1 year from the date of account opening\n\nClosure / Maturity:\n• Account matures **after 2 years**, and the eligible balance along with interest is paid to the depositor.\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+},
+
+{
+"keywords": ["kvp", "kisan vikas patra", "kisan patra", "vikas patra"],
+"answer": {
+    "randomize": false,
+    "options": [
+    "Kisan Vikas Patra (KVP)\n\nA savings certificate scheme where the invested amount doubles on maturity.\n\nFeatures (w.e.f. 01.01.2024):\n• Rate of Interest: 7.5% per annum\n• Maturity Period: 115 months (9 years and 7 months) — amount doubles\n• Minimum investment: ₹1,000 (in multiples of ₹100)\n• No maximum deposit limit\n• KVP certificates can be pledged or transferred as security by submitting the required form and acceptance letter at the concerned Post Office\n\nClosure / Maturity:\n• The deposit amount is paid on completion of the prescribed maturity period as per the rate applicable on the date of deposit.\n\nFor more details please visit below\n<a href='https://www.indiapost.gov.in/banking-services/saving' target='_blank' style='color:#D32F2F; text-decoration:underline;'>https://www.indiapost.gov.in/banking-services/saving</a>"
+    ]
+}
+},
+
+        
+        {
+            "keywords": ["postal_services", "mail services", "post services", "letter services", "parcel services", "delivery services"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "<b>India Post Services Available:</b>",
+                    "<b>Core Postal Services:</b><br>\n1. Speed Post (1-3 days)\n2. Registered Post (proof of mailing)\n3. Parcel Service (up to 35kg)\n4. Money Order\n\n<b>Rates calculator</b>: <a href='https://www.indiapost.gov.in/vas/Pages/CalculatePostage.aspx'  target='_blank' style='color:#D32F2F; text-decoration:underline;'>Calculate Postage</a>",
+                    "<b>Special Services:</b><br>\n• Business Parcel:\n• Logistics Post\n• Media Mail\n• e-Post\n\n<b>Rates calculator</b>: <a href='https://www.indiapost.gov.in/vas/Pages/CalculatePostage.aspx'  target='_blank' style='color:#D32F2F; text-decoration:underline;'>Calculate Postage</a>",
+                    "<b>Service Highlights:</b><br>\n• Cash on Delivery available\n• Free package pickup (for premium services)\n• SMS alerts for delivery status\n• Insurance options\n• Saturday delivery in major cities\n\n<b>Rates calculator</b>: <a href='https://www.indiapost.gov.in/vas/Pages/CalculatePostage.aspx'  target='_blank' style='color:#D32F2F; text-decoration:underline;'>Calculate Postage</a>"
+                ]
+            },
+        
+            "options": [
+                { "text": "Speed Post", "value": "speed_post" },
+                { "text": "Registered Post", "value": "registered_post" },
+                { "text": "Money Order", "value": "MO" },
+                { "text": "Parcel Service", "value": "parcel_service" },
+                { "text": "International Mail", "value": "international_mail" }
+            ]
+        },
+        {
+            "keywords": ["speed_post", "fast post", "urgent delivery", "express mail", "e-commerce delivery"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "<b>Speed Post Services</b>:\n• <b>Delivery Time</b>: 1-3 days (domestic)\n• <b>Weight Limit</b>: Up to 35kg\n• <b>Tracking</b>: Real-time online\n• <b>Coverage</b>: 1000+ cities\n• <b>Special Services</b>:\n  - Cash on Delivery\n  - Insurance\n  - Pickup from premises\n• <b>Rates</b>: Starts from ₹35 for 50gm"
+                ]
+            }
+        },
+        {
+            "keywords": ["registered_post", "proof of mailing", "secure mail", "regd post"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Registered Post ensures a secure mailing with proof of booking and delivery. It's ideal for important documents or valuables. Each item gets a unique tracking number."
+                ]
+            }
+        },
+        {
+            "keywords": ["money_order", "electronic money order", "eMO", "send money","MO","money order","Money order"],
+            "answer": {
+                
+                "options": [
+                    "Money Order services allow you to send money safely to any post office location. The e-Money Order (eMO) is a fast, electronic option for transferring funds."
+                ]
+            }
+        },
+        {
+            "keywords": ["parcel_service", "business parcel", "express parcel", "ship package", "package delivery"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Parcel Service is designed for sending packages up to 35kg. Options include Business Parcel and Express Parcel, with online tracking and insurance available."
+                ]
+            }
+        },
+        {
+            "keywords": ["international_mail", "foreign post", "overseas mail", "global mail", "international shipping", "ems"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "<b>International Mail Services</b><br><br>• <b>International Speed Post (EMS):</b> Fastest service to 100+ countries (3–7 days).<br>• <b>Air Mail:</b> For letters and small packets (7–15 days).<br>• <b>Surface Mail:</b> Economy option for non-urgent parcels (1–3 months).<br>• <b>Business Parcel:</b> Suitable for bulk international shipping.<br><br><b>Important Guidelines:</b><br>• Customs declaration is mandatory for all parcels.<br>• Recommended insurance:<br>&nbsp;&nbsp;- Documents: ₹10,000 free<br>&nbsp;&nbsp;- Parcels: ₹5 per ₹100 value<br><br><b>Estimated Delivery Time (EMS):</b><br>• USA / UK: 5–7 days<br>• Middle East: 3–5 days<br>• Europe: 4–7 days<br>• Asia Pacific: 2–4 days"
+                ]
+            }
+        },
+        {
+            "keywords": ["post_office_directory", "post office list", "all post offices", "find office by pincode", "find office by location"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "You can access the complete India Post office directory here:\nhttps://www.indiapost.gov.in/vas/pages/find-post-office.aspx\n\nSearch by:\n- State/City\n- PIN Code\n- Office Name\n- Office Type (Head Office, Sub Office etc.)",
+                    "Complete Post Office Directory:\nhttps://www.indiapost.gov.in/vas/pages/find-post-office.aspx\n\nSearch by:\n- State/City\n- PIN Code\n- Office Name\n- Office Type",
+                    "Post Office Network:\n• 1.5 lakh+ post offices\n• 1.3 lakh rural offices\n• 25,000+ with banking services\n• 500+ Passport Seva Kendras\n\nFind your nearest: SMS POSTOFFICE <PINCODE> to 51969"
+                ]
+            }
+        },
+        {
+            "keywords": ["pin_code", "postal code", "pincode search", "find pincode", "verify pincode"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Find PIN Code:\n1. Official Search: https://www.indiapost.gov.in/vas/pages/findpincode.aspx\n2. SMS: Send 'PINCODE <location>' to 166 or 51969\n3. Mobile App: India Post 'Pincode Finder'\n\nContains 6 digits representing specific postal region",
+                    "PIN Code Search Options:\n1. Official Portal: https://www.indiapost.gov.in/vas/pages/findpincode.aspx\n2. SMS: PINCODE <location> to 166\n3. Mobile App: 'India Post Pincode Finder'\n\nPIN Structure:\n• 1st digit: Region\n• 2nd digit: Sub-region\n• 3rd digit: District\n• Last 3 digits: Post office",
+                    "Find Your PIN Code:\n• Urban Areas: Unique for each post office\n• Rural Areas: May cover multiple villages\n• Special Codes:\n  - 110001: New Delhi Head Office\n  - 400001: Mumbai GPO\n\nPro Tip: Always verify PIN code before mailing"
+                ]
+            }
+        },
+        {
+            "keywords": ["contact", "customer care", "help desk", "support", "phone number", "email", "grievance", "complaint number"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "India Post Contact Information:\n\n• Toll Free: 1800 266 6868\n• Email: helpdesk@indiapost.gov.in\n• Grievance Cell: 011-23096010\n• Twitter: @IndiaPostOffice\n\nOffice Hours: 9:30 AM - 6:00 PM (Mon-Fri)",
+                    "India Post Support Channels:\n• Toll-Free: 1800 266 6868 (8AM-8PM)\n• Email: helpdesk@indiapost.gov.in\n• Twitter: @IndiaPostHelp\n• Grievance Portal: https://pgportal.gov.in/\n\nRegional Offices: https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx",
+                    "Escalation Matrix:\n1. Local Post Office\n2. Divisional Office\n3. Circle Office\n4. Headquarters\n\nSpeed Post Complaints:\nspeedpostgrievance@indiapost.gov.in\n\nIPPB Support: 155299 (24x7)"
+                ]
+            }
+        },
+        {
+            "keywords": ["holidays", "post office holiday", "working days", "holiday list", "public holidays"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "India Post Holiday Calendar:\n• Weekly Holiday: Sunday\n• Second Saturday: Closed\n• Gazetted Holidays: About 15 national holidays\n• State-specific holidays\n\nView current year's list at:\nhttps://www.indiapost.gov.in/vas/pages/holidaylist.aspx",
+                    "2024 Holiday Calendar:\n• National Holidays: 15 days\n• State-Specific Holidays\n• Weekly Off: Sundays\n• 2nd & 4th Saturdays closed\n\nDownload: https://www.indiapost.gov.in/vas/DOP/Pdf/Holiday_List_2024.pdf",
+                    "Special Working Days:\n• Month-end: Extended hours\n• Festival Seasons: Some offices open\n• Exam Period: Extra counters for certificates\n\nNote: Delivery services continue on some holidays"
+                ]
+            }
+        },
+        {
+            "keywords": ["career", "jobs", "recruitment", "employment", "post office jobs", "apply for job"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "India Post Recruitment:\n\nCurrent openings for:\n- Postal Assistants\n- Postmen\n- GDS (Gramin Dak Sevaks)\n- MTS\n\nApply at: https://www.indiapost.gov.in/recruitment\n\nNotifications also published in Employment News",
+                    "Current Opportunities:\n• GDS (Gramin Dak Sevak)\n• Postal Assistant\n• Postman/MTS\n• Sorting Assistant\n\nApply at: https://www.indiapost.gov.in/recruitment\n\nExam Pattern: https://www.indiapost.gov.in/vas/DOP/Pdf/PA_SA_Syllabus.pdf",
+                    "Career Resources:\n1. Previous Papers: https://www.indiapost.gov.in/vas/Pages/PreviousYearQuestionPaper.aspx\n2. Training Programs\n3. Skill Development\n\nBenefits:\n• Pension Scheme\n• Medical Facilities\n• Government Accommodation"
+                ]
+            }
+        },
+        {
+            "keywords": ["scheme", "new scheme", "latest scheme", "recent scheme", "upcoming services"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Recent India Post Schemes:\n1. Dak Pay - Digital Payment Solution\n2. QR Code based Money Order\n3. IPPB-India Post Payments Bank Services\n4. Retail Post - Bill Payments\n5. Passport Seva Kendras at Post Offices\n\nDetails at: https://www.indiapost.gov.in/vas/pages/schemes.aspx",
+                    "Recent Initiatives:\n1. DakPay Digital Payments\n2. QR Code Money Orders\n3. Aadhaar Enabled Payment Services\n4. Retail Post for bill payments\n\nDetails: https://www.indiapost.gov.in/vas/pages/schemes.aspx",
+                    "New Digital Services:\n• e-Stamp Paper\n• Online Postal Life Insurance\n• e-Post Office\n• WhatsApp Banking\n\nComing Soon:\n• Drone Deliveries (pilot phase)\n• Smart Post Offices"
+                ]
+            }
+        },
+        {
+            "keywords": ["what can you do", "capabilities", "functions", "features", "help", "how can you help"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "I can assist you with all India Post services including:\n\n• Tracking shipments\n• Locating post offices\n• Banking schemes info\n• Postal services details\n• Insurance products\n• Complaint registration\n• PIN code search\n\nJust ask or select from the options!",
+                    "I Can Assist With:\n• Tracking & Delivery Updates\n• Post Office Locator\n• Banking Scheme Details\n• Complaint Registration\n• PIN Code Verification\n• Career Information\n\nTry: 'Track my parcel' or 'Open RD account'",
+                    "My Services Include:\n1. Postal: Speed Post, Registered Mail\n2. Financial: Savings Schemes, Insurance\n3. Information: Holidays, Contacts\n4. Digital: Online Services Guidance\n\nFull List: https://www.indiapost.gov.in/vas/Pages/IndiaPostHome.aspx"
+                ]
+            },
+            "options": [
+                { "text": "Track Item", "value": "track_trace" },
+                { "text": "Find Post Office", "value": "find_nearest_post_office" },
+                { "text": "Banking Services", "value": "banking_schemes" },
+                { "text": "Popular Queries", "value": "faq" },
+                { "text": "New Services", "value": "new_services" },
+                { "text": "Tutorial Videos", "value": "tutorials" }
+            ]
+        },
+        {
+            "keywords": ["website", "official website", "india post portal", "online services", "post office app"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "India Post Official Website:\nhttps://www.indiapost.gov.in\n\nKey Sections:\n- Track & Trace\n- Post Office Locator\n- Online Booking\n- Banking Services\n- Philately\n- Recruitment\n\nMobile App also available on Play Store/App Store",
+                    "Official Portal: https://www.indiapost.gov.in\nKey Sections:\n• Track Consignments\n• Find Post Office\n• Banking Services\n• Philately\n\nMobile Apps:\n• India Post\n• India Post Payments Bank",
+                    "Digital Services Hub:\n1. ePost Office: https://www.epostoffice.gov.in\n2. Postal Shop: https://postalshop.indiapost.gov.in\n3. Stamp Ordering\n4. Business Post\n\nServices Available 24/7"
+                ]
+            }
+        },
+        {
+            "keywords": ["sorry", "i don't understand", "not sure", "confused", "repeat", "explain again"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "I apologize for any confusion. Let me try to help you better. Could you please:\n1. Rephrase your question\n2. Select from these common topics\n3. Type 'help' to see what I can do",
+                    "Let me help differently. You can:\n1. Rephrase your question\n2. Choose from these options\n3. Type 'help' for assistance\n\nI'm still learning!",
+                    "Apologies for the confusion. Try:\n• Using simpler words\n• Checking spelling\n• Selecting from menu\n\nI'll connect you to human agent if needed"
+                ]
+            },
+            "options": [
+                { "text": "Show Help", "value": "what can you do" },
+                { "text": "Main Menu", "value": "hi" },
+                { "text": "Live Agent", "value": "human_agent" },
+                { "text": "Feedback", "value": "feedback" }
+            ]
+        },
+        {
+            "keywords": ["late delivery", "delayed", "not received", "pending delivery", "where is my parcel"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "We’re sorry to hear about the delay.\nPlease share your tracking ID or registered details so we can check your delivery status."
+                ]
+            }
+        },
+        {
+            "keywords": ["wrong_item", "incorrect product", "not what I ordered","wrong item"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Apologies for the inconvenience.\nPlease provide your order number, or upload a picture of the item for quick resolution. and we’ll assist you with a replacement or return."
+                ]
+            }
+        },
+        {
+            "keywords": ["damaged", "broken", "defective", "damaged parcel", "broken item"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "We regret the damage caused.\nKindly upload a picture of the damaged item and share your order details for quick resolution."
+                ]
+            }
+        },
+        {
+            "keywords": ["payment","refund", "money back", "payment issue", "refund status"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "We understand your concern.\nRefunds usually take 5–7 business days.\nPlease provide your transaction ID so we can check the status."
+                ]
+            }
+        },
+        {
+        "keywords": ["other_complaints"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "We’re here to help.\nCould you please provide more details about your complaint so we can resolve it quickly?",
+                    "If the issue requires manual review, please send an email to xyz@gmail.com along with the following details:\n• Order / Consignment Number\n• Registered Mobile Number\n• Brief description of the issue\n\nOur support team will respond at the earliest."
+                ]
+                    
+            }
+        },
+        {
+            "keywords": ["complaint", "issue", "problem", "help", "customer complaint"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "We’re here to help.\nCould you please provide more details about your complaint so we can resolve it quickly?"
+                ]
+            },
+            "options": [
+                { "text": "Damaged Item", "value": "damaged" },
+            
+                { "text": "wrong delivery", "value": "wrong_item" },
+                { "text": "Refund/Payment", "value": "payment" },
+                { "text": "delayed", "value": "delayed" },
+                { "text": "other", "value": "other_complaints" }
+            ]
+        }
+        
+        ,
+        {
+            "keywords": ["customer support", "talk to agent", "human help", "speak to representative"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "I will connect you with a customer support representative for further assistance."
+                ]
+            }
+        },
+    {
+            "keywords": ["shipping_cost", "postage rates", "delivery charges", "speed post cost","SRR"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "<b>Shipping & Parcel Rates:</b><br>Check live postage rates using the <a href='https://www.indiapost.gov.in/vas/Pages/CalculatePostage.aspx' target='_blank' style='color:red; text-decoration:underline;'>India Post Postage Calculator</a>.<br><br><b>Sample Speed Post Rates:</b><br>• 50gm: ₹35 (Local), ₹45 (National)<br>• 1kg: ₹120 (Local), ₹150 (National)<br>• +₹50 for Cash on Delivery<br><br><b>Parcel Charges Guide:</b><br>1. Weight Slabs: 50gm–35kg<br>2. Distance Zones: Local / State / National<br>3. Additional Services:<br>  - Insurance: ₹1 per ₹100<br>  - Acknowledgment: ₹5<br><br><i>Tip:</i> Business parcels receive volume-based discounts."   ]
+            }
+        },
+        {
+            "keywords": ["delivery_complaint", "missing parcel", "late delivery", "not received", "undelivered","lost","delivery complaint"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Complaint Resolution Steps:\n1. Track your item first\n2. Contact local post office\n3. Escalate via: https://pgportal.gov.in/\n4. Speed Post issues: speedpostgrievance@indiapost.gov.in\n\nStandard Resolution Time: 3-7 working days",
+                    "Delivery Issues Help:\n• Missing Items: File within 30 days\n• Damaged Parcels: Report immediately\n• Delayed Delivery: Check for holidays/strikes\n\nCompensation Policy:\n• Insured items: Full value\n• Regular post: Limited liability"
+                ]
+            }
+        },
+        {
+        "keywords": ["insurance_schemes", "insurance", "life insurance"],
+        "answer": {
+            "randomize": false,
+            "options": [
+                "India Post offers a range of life insurance plans for government and private employees. These plans provide a high sum assured at low premiums. You can choose from Postal Life Insurance (PLI) or Rural Postal Life Insurance (RPLI)."
+            ]
+        },
+        "options": [
+            { "text": "Postal Life Insurance (PLI)", "value": "pli" },
+            { "text": "Rural Postal Life Insurance (RPLI)", "value": "rpli" }
+        ]
+    },
+    {
+        "keywords": ["pli", "postal life insurance"],
+        "answer": {
+            "randomize": false,
+            "options": [
+            "Postal Life Insurance (PLI) started in 1884 for postal employees, later extending to telegraph employees. It's the country's oldest insurer, with over 50 million policies as of March 31, 2021. PLI now covers a wide range of individuals, including government employees, defense personnel, professionals, and employees of listed companies.<br><br><b>Types of PLI Schemes:</b><br>• Anticipated Endowment Assurance (Sumangal)<br>• Children Policy (Bal Jeevan Bima)<br>• Convertible Whole Life Assurance (Suvidha)<br>• Endowment Assurance (Santosh)<br>• Joint Life Assurance (Yugal Suraksha)<br>• Whole Life Assurance (Suraksha)"        ]
+        }
+    },
+    {
+        "keywords": ["rpli", "rural postal life insurance"],
+        "answer": {
+            "randomize": false,
+            "options": [
+            "Rural Postal Life Insurance (RPLI) was introduced in 1995 to extend insurance coverage to rural India, addressing the low insurance penetration highlighted by the Malhotra Committee in 1993. Leveraging the extensive postal network and low operational costs, RPLI aims to provide insurance to rural populations, particularly targeting backward classes and women workers, while also spreading insurance awareness in rural areas.<br><br><b>Types of RPLI Schemes:</b><br>• 10 Years Rural PLI<br>• Anticipated Endowment Assurance (Gram Sumangal)<br>• Children Policy (Bal Jeevan Bima)<br>• Convertible Whole Life Assurance (Gram Suvidha)<br>• Endowment Assurance (Gram Santosh)<br>• Whole Life Assurance (Gram Suraksha)"        ]
+        }
+    },
+        {
+            "keywords": ["raise_complaint", "lodge complaint", "file a complaint", "report issue", "grievance portal"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Please tell me what your complaint is about so I can direct you to the right channel.",
+                    "To help you best, please select the type of issue you're facing or describe it briefly."
+                ]
+            },
+            "options": [
+                { "text": "Delivery Issue", "value": "delivery_complaint" },
+                { "text": "Damaged Item", "value": "damaged" },
+                { "text": "Refund/Payment", "value": "refund" },
+                { "text": "Service Issue", "value": "complaint" }
+            ]
+        },
+        {
+            "keywords": ["ok","k","okay","i got it","Accha"],
+            "answer": {
+                "randomize": true,
+                "options": [
+                    "Yes,I hope you query got clarified!",
+                    "Happy to serve you,Feel free to reach anytime.",
+                    "Hnji."
+                ]
+            }
+        },
+        {
+    "keywords": [
+        "awb","em","cp","rx","order","consignment","tracking","track","number",
+        "0","1","2","3","4","5","6","7","8","9"
+    ],
+    "answer": {
+        "randomize": true,
+        "options": [
+        "✅ Your complaint has been registered.\nTicket ID: IP-7X4Q9W2K\nOur support team will contact you within 24–48 hours.",
+        "✅ Complaint submitted successfully.\nTicket ID: IP-9D3M7T8Q\nYou will receive follow-up communication soon.",
+        "✅ Thank you for reporting the issue.\nTicket ID: IP-5K8P2L9R\nWe appreciate your patience while we resolve this."
+        ]
+    },
+    "options": [
+        { "text": "Track & Trace", "value": "track_trace" },
+        { "text": "Main Menu", "value": "hi" }
+    ]
+    },
+
+
+    {
+    "keywords": ["Refund/Payment", "refund/payment", "payment", "refund", "payment issue", "refund status"],
+    "answer": {
+        "randomize": false,
+        "options": [
+        "We understand your concern. Refunds usually take 5–7 business days.\nPlease provide your Transaction / UTR / Payment ID so we can check the status."
+        ]
+    },
+    "options": [
+        { "text": "Enter Transaction ID", "value": "enter_txn_id" }
+    ]
+    },
+
+    {
+    "keywords": ["enter_txn_id"],
+    "answer": {
+        "randomize": false,
+        "options": [
+        "Sure! Please type your Transaction / UTR / Payment ID now.\nExamples:\n• UTR1234567890  • TXN-98AF43  • UPI-2024XXXXXX"
+        ]
+    },
+    "options": []
+    },
+
+    {
+    "keywords": [
+        "utr","txn","txnid","payment id","transaction","reference","ref","upi","imps","neft","rtgs",
+        "gpay","phonepe","paytm","id","#",
+        "0","1","2","3","4","5","6","7","8","9"
+    ],
+    "answer": {
+        "randomize": true,
+        "options": [
+        "✅ Your refund request has been logged.\nRefund Case ID: RFD-82QM7P4A\nWe’ve sent this to our billing team. You’ll receive an update within 5–7 business days.",
+        "✅ Thanks! We’ve registered your refund inquiry.\nRefund Case ID: RFD-5LK93TQ2\nPlease allow 5–7 business days for processing. We’ll notify you on the same channel.",
+        "✅ Refund check created successfully.\nRefund Case ID: RFD-9ZX4M2H7\nOur team is verifying the payment. Expect an update in 5–7 business days."
+        ]
+    },
+    "options": [
+        { "text": "Main Menu", "value": "hi" },
+        { "text": "Contact Support", "value": "contact" }
+    ]
+    },
+
+
+
+    {
+    "keywords": ["delayed", "late delivery", "delay", "not received yet", "pending delivery", "delivery pending"],
+    "answer": {
+        "randomize": false,
+        "options": [
+        "We’re sorry to hear about the delay.\nPlease share your Tracking / Consignment ID or registered details so we can check your delivery status."
+        ]
+    },
+    "options": [
+        { "text": "Enter Tracking ID", "value": "enter_tracking_id" }
+    ]
+    },
+
+    {
+    "keywords": ["enter_tracking_id"],
+    "answer": {
+        "randomize": false,
+        "options": [
+        "Sure! Please type your Tracking / Consignment ID now.\nExamples:\n• EM123456789IN  • CP987654321IN  • RX123456789IN"
+        ]
+    },
+    "options": []
+    },
+
+    {
+    "keywords": [
+        "em","cp","rx","consignment","tracking","track","id","article","reference","ref",
+        "0","1","2","3","4","5","6","7","8","9"
+    ],
+    "answer": {
+        "randomize": true,
+        "options": [
+        "✅ We’ve logged a delivery-delay inquiry.\nDelay Case ID: DLY-7QK49P2A\nYour item has been queued for priority follow-up. You’ll receive an update within **24–48 hours.**",
+        "✅ Thanks! Your delay report is registered.\nDelay Case ID: DLY-5MZ83T9Q\nWe’ve escalated this to the delivery team and will share the latest scan soon.",
+        "✅ Delay check created successfully.\nDelay Case ID: DLY-9XR6L2H4\nWe’re verifying the last scan and current route. Expect an update shortly."
+        ]
+    },
+    "options": [
+        { "text": "Track & Trace", "value": "track_trace" },
+        { "text": "Main Menu", "value": "hi" },
+        { "text": "Contact Support", "value": "contact" }
+    ]
+    }
+    ]

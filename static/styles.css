@@ -325,12 +325,14 @@ footer {
 }
 
 .bot-message {
+    white-space: pre-line;
     background: #f1f1f1;
     padding: 10px 15px;
     border-radius: 10px;
-    margin-bottom: 15px;
+    /* INCREASED margin for better vertical separation */
+    margin-bottom: 20px; 
     max-width: 80%;
-    word-break: break-word; /* This is the key property */
+    word-break: break-word; 
     overflow-wrap: break-word;
 }
 
@@ -339,11 +341,12 @@ footer {
     color: white;
     padding: 10px 15px;
     border-radius: 10px;
-    margin-bottom: 15px;
+    /* INCREASED margin for better vertical separation */
+    margin-bottom: 20px; 
     margin-left: auto;
     max-width: 80%;
-    width: fit-content; /* This is the key property */
-    word-break: break-word; /* Ensures long words wrap */
+    width: fit-content; 
+    word-break: break-word; 
 }
 
 .under-construction {
@@ -625,4 +628,144 @@ footer {
     opacity: 0.5;
     cursor: not-allowed;
 }
+/* Add this to your styles.css */
+.upload-btn {
+    background: none;
+    border: none;
+    color: #D82F2F; /* India Post Red */
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex; /* To center the icon */
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+}
 
+.upload-btn:hover {
+    color: #b82525;
+}
+
+.chatbot-input {
+    display: flex;
+    align-items: center; /* Important to align the button/input vertically */
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+/* Add this to your styles.css */
+
+/* Class to initially hide the image upload functionality */
+.hidden-upload {
+    display: none !important; 
+    /* Use !important to override any flex display applied to .chatbot-input's children */
+}
+/* Styling for the disabled state of the upload button */
+.disabled-upload {
+    opacity: 0.5; /* Fade it out */
+    cursor: not-allowed; /* Change cursor */
+}
+
+/* Ensure the container is flex-aligned but the camera button is the only visible item */
+#imageUploadContainer {
+    display: flex;
+    align-items: center;
+}
+
+/* Ensure the upload button is visually distinct from the rest of the input area */
+.upload-btn {
+    background: none;
+    border: none;
+    color: #D82F2F; 
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.upload-btn:hover:not(.disabled-upload) {
+    color: #b82525;
+}
+/* Post Office Cards */
+.po-card {
+  display: grid;
+  grid-template-columns: 140px 1fr 56px;
+  gap: 12px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.12);
+  padding: 14px;
+  margin: 12px 0;
+  align-items: center;
+}
+
+.po-badge {
+  background: #D82F2F;
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.po-title {
+  font-size: 16px;
+}
+
+.po-content {
+  color: #2C3E50;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.po-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.po-actions .po-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #F7F7F7;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease;
+}
+
+.po-actions .po-btn:hover { transform: translateY(-2px); background: #eee; }
+
+.po-icon { font-size: 18px; color: #D82F2F; }
+
+.bot-link {
+  color: #d82f2f;        /* Indian Post red */
+  font-weight: 600;
+  text-decoration: underline;
+}
+.bot-link:hover {
+  text-decoration: none;
+}
+/* Add this new block to reduce font size inside the message bubbles */
+.bot-message p,
+.user-message p {
+    font-size: 0.9rem; /* Reduced chat message text size (e.g., to 14px) */
+    line-height: 1.4;
+    margin: 0; /* Ensures the text inside the <p> doesn't add extra space */
+}
+
+/* Optional: Reduce the font size of the quick action buttons */
+.option-button {
+    /* ... existing properties ... */
+    font-size: 13px; /* Reduced button text size */
+    /* ... existing properties ... */
+}
