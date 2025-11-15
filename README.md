@@ -3,27 +3,12 @@ A simple AI-powered assistant built using HTML, CSS, JavaScript, and Flask
 The Post Office Services Chatbot is an interactive web-based assistant designed to answer common postal queries, locate nearby post offices using PIN code or location, and even allow users to upload images of damaged parcels along with a description to generate a complaint.
 
 ⭐ Features
-💬 1. Answers Basic Queries
-The chatbot responds to commonly asked questions such as:
-Speed Post / Registered Post
-Parcel charges & delivery
-Post office timings
-Banking & savings schemes
-General postal information
-
-📍2.Find Post Office by Location or PIN Code
-Users can:
-Enter their PIN code, or
-Share current location
-The chatbot displays:
-Post office name
-Branch type (HO/SO/BO)
-Address
-Contact details
-
-📸3.Upload Damaged Parcel Images
-Users can upload or capture an image using their camera.Add a written description
-Chatbot creates a structured complaint entry.This helps users quickly report postal issues.
+   💬 1. Basic Query Support
+    Quick answers to common postal questions like Speed Post, parcel services, timings, banking schemes, and general information.
+   📍 2. Post Office Locator
+    Search for nearby post offices using PIN code or current location, and view branch name, type (HO/SO/BO), address, and contact details.
+    📸 3. Damage Complaint Upload
+    Upload or capture an image of a damaged parcel, add a description, and generate a structured complaint entry for easy reporting.
 
 🛠️ Tech Stack
 Frontend:HTML,CSS,JavaScript
@@ -46,17 +31,17 @@ postoffice-chatbot/
 │── README.md
 
 🚀 Getting Started
-1. Clone the Repository
+1. Clone the Repository:
 git clone https://github.com/your-username/postoffice-chatbot.git
 cd postoffice-chatbot
 
-2. Install Required Packages
+2. Install Required Packages:
 pip install -r requirements.txt
 
-3. Run the Flask App
+3. Run the Flask App:
 python app.py
 
-4. Open in Browser
+4. Open in Browser:
 http://127.0.0.1:5000/
 
 🧠 How It Works
