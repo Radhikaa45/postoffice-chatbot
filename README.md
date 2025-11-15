@@ -1,3 +1,4 @@
+```
 📮 Post Office Services Chatbot
 A simple AI-powered assistant built using HTML, CSS, JavaScript, and Flask
 The Post Office Services Chatbot is an interactive web-based assistant designed to answer common postal queries, locate nearby post offices using PIN code or location, and even allow users to upload images of damaged parcels along with a description to generate a complaint.
@@ -11,8 +12,8 @@ The Post Office Services Chatbot is an interactive web-based assistant designed 
     Upload or capture an image of a damaged parcel, add a description, and generate a structured complaint entry for easy reporting.
 
 🛠️ Tech Stack
-Frontend:HTML,CSS,JavaScript
-Backend:Flask (Python)
+Frontend: HTML, CSS, JavaScript
+Backend: Flask (Python)
 
 Other:
 Local file storage for complaint images
@@ -65,4 +66,4 @@ Pull requests and suggestions are welcome!
 📬 Contact
 Radhika Gupta
 Email: radhikagupta45ig@gmail.com
-
+```
